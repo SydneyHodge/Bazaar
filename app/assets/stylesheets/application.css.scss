@@ -1,16 +1,17 @@
 @import "compass";
+@import "font-awesome-sprockets";
+@import "font-awesome";
 @import "bootstrap-sprockets";
 @import "bootstrap";
 @import "welcome";
 
-html {
+html, body {
 	height: 100%;
 }
 
 body {
-	height: 100%;
 	font-family: 'helvetica';
 	position: relative;
-	background-color: #2C3E50;
+	background-color: #238E68;
 	color: white;
 }

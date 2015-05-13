@@ -7,9 +7,15 @@ gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.1.0'
 
+# Bootstrap gem.
 gem 'bootstrap-sass', '~> 3.3.4'
 gem 'sass-rails', '>= 3.2'
+
+# Compass gem for Flexbox.
 gem 'compass-rails', github: 'Compass/compass-rails', branch: 'master' 
+
+# Font Awesome Gem.
+gem 'font-awesome-sass'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'

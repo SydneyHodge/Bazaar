@@ -1,5 +1,26 @@
+$seagreen: #238E68;
+
 #wrapper{ 
-  @include display-flex;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;  
+
 	@include flex-direction(column);
-	min-height: 100vh; 
+	min-height: 100vh;
+	position: relative;
+}
+
+.shopping_bag_aside {
+	display: none;
+}
+
+.menu_aside {
+	display: none;
+}
+
+footer {
+	background-color: white;
+	color: $seagreen;
 }
