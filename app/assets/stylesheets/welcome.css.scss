@@ -1,4 +1,4 @@
-$seagreen: #238E68;
+$gray: #B2B2B2;
 $off_black: #333;
 
 #wrapper{ 
@@ -25,6 +25,10 @@ $off_black: #333;
 	color: $off_black;
 }
 
+.fa:hover {
+	color: $gray;
+}
+
 footer {
 	background-color: white;
 
@@ -34,6 +38,6 @@ footer {
 	}
 
 	.vcenter {
-
+		padding-top: 1em;
 	}
 }
