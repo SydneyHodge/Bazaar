@@ -1,4 +1,5 @@
 $seagreen: #238E68;
+$off_black: #333;
 
 #wrapper{ 
   display: -webkit-box;
@@ -20,7 +21,19 @@ $seagreen: #238E68;
 	display: none;
 }
 
+.fa { 
+	color: $off_black;
+}
+
 footer {
 	background-color: white;
-	color: $seagreen;
+
+	a {
+		color: $off_black;
+		font-size: 13px;
+	}
+
+	.vcenter {
+
+	}
 }

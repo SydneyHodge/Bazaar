@@ -1,29 +1,36 @@
-Footer.
-<!-- Three columns. -->
-<div class=".col-md-3"> 
-	<%= link_to "#", :target => "_blank" do %>
-		<i class="fa fa-bars fa-2x"></i>
-  <% end %>   
+<div class="container-fluid row">
 
-	<%= link_to "#", :target => "_blank" do %>
-  	<i class="fa fa-facebook fa-lg"></i>
-  <% end %>
+  	<!-- Three columns --> 
+    <div class="col-md-3">
+			<%= link_to "#", :target => "_blank" do %>
+				<i class="fa fa-bars fa-2x"></i>
+		  <% end %>   
 
-  <%= link_to "#", :target => "_blank" do %>
-  	<i class="fa fa-twitter fa-lg"></i>
-  <% end %>
-</div>
+		  <div class="container-fluid row">
+				<%= link_to "#", :target => "_blank" do %>
+			  	<i class="fa fa-facebook fa-lg"></i>
+			  <% end %>
 
-<div class=".col-md-6 text-center">
-	Bazaar logo
-</div>
+			  <%= link_to "#", :target => "_blank" do %>
+			  	<i class="fa fa-twitter fa-lg"></i>
+			  <% end %>
+		  </div>
+    </div>
 
-<div class=".col-md-3 text-right">
-	<%= link_to "#" do %>
-		LOGIN/SIGNUP
-  <% end %>
+    <div class="col-md-6 text-center">
+		  <%= link_to root_path do %>
+		    <%= image_tag "bazaar_logo_1.png", id: "logo", width: '200', height: '80' %>
+		  <% end %>
+    </div>
   
-	<%= link_to "#" do %>
-		<i class="fa fa-shopping-cart fa-2x"></i>
-  <% end %>
+    <div class="col-md-3 text-right text-center vcenter">
+			<%= link_to "#" do %>
+				LOGIN|SIGNUP
+		  <% end %>
+		  
+			<%= link_to "#" do %>
+				<i class="fa fa-shopping-cart fa-2x"></i>
+		  <% end %>
+    </div>
+
 </div>
