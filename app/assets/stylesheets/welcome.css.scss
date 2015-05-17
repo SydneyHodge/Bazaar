@@ -1,5 +1,11 @@
 $gray: #B2B2B2;
 $off_black: #333;
+$robinhood: #21CE99;
+
+::selection {
+  background-color: $robinhood;
+  color: #fff;
+}
 
 #wrapper{ 
   display: -webkit-box;
@@ -13,25 +19,36 @@ $off_black: #333;
 	position: relative;
 }
 
-
 a {
-	color: $off_black;
+	color: $robinhood;
 	font-size: 13px;
+}
+
+a:hover {
+	text-decoration: none;
+	color: $off_black;
 }
 
 .vcenter {
 	padding-top: 1em;
 }
 
-header {
-	background-color: white;
+header, footer {
+	background-color: rgba(255, 255, 255, 0.8);
+	border-color: transparent;
 }
 
-.shopping_bag_aside {
+#main-content {
+	.box {
+		padding: 50px;
+	}
+}
+
+.shopping-bag-aside {
 	display: none;
 }
 
-.menu_aside {
+.menu-aside {
 	display: none;
 }
 
@@ -41,8 +58,4 @@ header {
 
 .fa:hover {
 	color: $gray;
-}
-
-footer {
-	background-color: white;
 }
