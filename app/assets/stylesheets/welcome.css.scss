@@ -7,6 +7,11 @@ $robinhood: #21CE99;
   color: #fff;
 }
 
+::-moz-selection {
+  background-color: $robinhood;
+  color: #fff;
+}
+
 #wrapper{ 
   display: -webkit-box;
   display: -moz-box;
@@ -17,6 +22,10 @@ $robinhood: #21CE99;
 	@include flex-direction(column);
 	min-height: 100vh;
 	position: relative;
+}
+
+h1 {
+	color: $robinhood;
 }
 
 a {
