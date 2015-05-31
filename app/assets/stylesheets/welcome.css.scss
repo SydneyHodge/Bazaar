@@ -68,3 +68,37 @@ header, footer {
 .fa:hover {
 	color: $gray;
 }
+
+.all_items {
+  padding: 0;
+  margin: 0;
+ 	list-style: none;
+  
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  
+  -webkit-flex-flow: row wrap;
+  justify-content: space-between;
+
+	.items {
+		width: 200px;
+		height: 200px;  
+		margin-top: 20px;
+		margin-bottom: 0px; 
+	}
+	
+	.items_even {
+	  -webkit-box-shadow:0 1px 4px $robinhood, 0 0 40px rgba(0, 0, 0, 0.1) inset;
+	     -moz-box-shadow:0 1px 4px $robinhood, 0 0 40px rgba(0, 0, 0, 0.1) inset;
+          box-shadow:0 1px 4px $robinhood, 0 0 40px rgba(0, 0, 0, 0.1) inset;
+	}
+
+	.items_odd {
+	  -webkit-box-shadow:0 1px 4px $off_black, 0 0 40px rgba(0, 0, 0, 0.1) inset;
+	     -moz-box-shadow:0 1px 4px $off_black, 0 0 40px rgba(0, 0, 0, 0.1) inset;
+          box-shadow:0 1px 4px $off_black, 0 0 40px rgba(0, 0, 0, 0.1) inset;
+	}
+}
