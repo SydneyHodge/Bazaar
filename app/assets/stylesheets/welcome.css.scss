@@ -24,8 +24,12 @@ $robinhood: #21CE99;
 	position: relative;
 }
 
-h1 {
+h1, .even {
 	color: $robinhood;
+}
+
+h1, .odd {
+	color: $off_black;
 }
 
 a {
