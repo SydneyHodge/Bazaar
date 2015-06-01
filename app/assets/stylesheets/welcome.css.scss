@@ -52,8 +52,10 @@ header, footer {
 }
 
 #main-content {
+	margin: 50px 0;
+
 	.box {
-		padding: 50px;
+		padding: 10px 50px 0 50px;
 	}
 }
 
@@ -76,7 +78,7 @@ header, footer {
 .all_items {
   padding: 0;
   margin: 0;
- 	list-style: none;
+  list-style: none;
   
   display: -webkit-box;
   display: -moz-box;
@@ -89,9 +91,8 @@ header, footer {
 
 	.items {
 		width: 200px;
-		height: 200px;  
-		margin-top: 20px;
-		margin-bottom: 0px; 
+		height: 200px;
+		margin-bottom: 20px;
 	}
 	
 	.items_even {
