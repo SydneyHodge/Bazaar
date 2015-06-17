@@ -17,6 +17,9 @@ gem 'compass-rails', github: 'Compass/compass-rails', branch: 'master'
 # Font Awesome Gem.
 gem 'font-awesome-sass'
 
+# Devise 
+gem 'devise'
+
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder

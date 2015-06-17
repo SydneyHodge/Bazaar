@@ -2,8 +2,10 @@
 
 <div class="all_items">
 	<% for i in 0..5 do %>
-  	<div class="items items_even">
-		</div>
+	<%= link_to item_path do %>
+	  	<div class="items items_even">
+			</div>
+		<% end %>
 	<% end %>
 </div>
 
