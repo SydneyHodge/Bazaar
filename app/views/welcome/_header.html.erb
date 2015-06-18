@@ -19,8 +19,11 @@
 		<%= link_to "#" do %>
 			<i class="fa fa-search fa-lg"></i>
 		<% end %>
-		<%= link_to root_path do %>
-			LOGIN|SIGNUP
+		<%= link_to :controller => :users, :action => :sign_in do %>
+			LOGIN|
+		<% end %>
+		<%= link_to :controller => :users, :action => :sign_up do %>
+			SIGNUP
 		<% end %>
 	</div>
 </div>
