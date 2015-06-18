@@ -19,11 +19,8 @@
 		<%= link_to "#" do %>
 			<i class="fa fa-search fa-lg"></i>
 		<% end %>
-		<%= link_to :controller => :users, :action => :sign_in do %>
-			LOGIN|
-		<% end %>
-		<%= link_to :controller => :users, :action => :sign_up do %>
-			SIGNUP
-		<% end %>
+		<%= link_to "LOGIN", new_user_session_path %>
+		|
+		<%= link_to "SIGNUP", new_user_registration_path %>
 	</div>
 </div>
