@@ -1,3 +1,50 @@
-body {
-	background-color: blue;
+$gray: #B2B2B2;
+$off_black: #333;
+$robinhood: #21CE99;
+
+.container-fluid, .row {
+	height: 100%;
+}
+
+.box_right {
+	overflow-y: auto;
+}
+
+.box_left {
+	height:100%;
+	border-radius: 2px;
+	background-color: $robinhood;
+
+	display: flex;
+	align-items: center;
+
+	.vcenter {
+		width: 100%;
+	}
+
+	a {
+		color: white;
+	}
+
+	a:hover {
+		color: $off_black;
+	}
+
+	input {
+		display: block;
+		margin: 0;
+		width: 100%; 
+		appearance: none;
+		box-shadow: none;
+		border-radius: 2px;
+		padding: 10px;
+		border: solid 1px #dcdcdc;
+		transition: box-shadow 0.3s, border 0.3s;
+	}
+
+	input:focus, input.focus {
+		outline: none;
+		border: solid 1px #707070;
+		box-shadow: 0 0 5px 1px #969696;
+	}
 }
