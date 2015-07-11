@@ -1,6 +1,7 @@
 $gray: #B2B2B2;
 $off_black: #333;
 $robinhood: #21CE99;
+$white_smoke: #ECECEC;
 
 ::selection {
   background-color: $robinhood;
@@ -22,10 +23,11 @@ $robinhood: #21CE99;
 	@include flex-direction(column);
 	min-height: 100vh;
 	position: relative;
+	background-color: $robinhood;
 }
 
 h1, .even {
-	color: $robinhood;
+	color: #FFFFFF;
 }
 
 h1, .odd {
@@ -97,19 +99,15 @@ header, footer {
 
 	.items {
 		width: 200px;
-		height: 200px;
-		margin-bottom: 20px;
+		height: 225px;
+		margin-bottom: 15px;
+		border-radius: 2px;
+		background-color: $white_smoke;
 	}
 	
 	.items_even {
-	  -webkit-box-shadow:0 1px 4px $robinhood, 0 0 40px rgba(0, 0, 0, 0.1) inset;
-	     -moz-box-shadow:0 1px 4px $robinhood, 0 0 40px rgba(0, 0, 0, 0.1) inset;
-          box-shadow:0 1px 4px $robinhood, 0 0 40px rgba(0, 0, 0, 0.1) inset;
 	}
 
 	.items_odd {
-	  -webkit-box-shadow:0 1px 4px $off_black, 0 0 40px rgba(0, 0, 0, 0.1) inset;
-	     -moz-box-shadow:0 1px 4px $off_black, 0 0 40px rgba(0, 0, 0, 0.1) inset;
-          box-shadow:0 1px 4px $off_black, 0 0 40px rgba(0, 0, 0, 0.1) inset;
 	}
 }
