@@ -2,6 +2,7 @@ $gray: #B2B2B2;
 $off_black: #333;
 $robinhood: #21CE99;
 $white_smoke: #ECECEC;
+$grayish_white: #ECEAEB;
 
 ::selection {
   background-color: $robinhood;
@@ -48,7 +49,31 @@ a:hover {
 	padding-top: 1em;
 }
 
-header, footer {
+header { 
+	background-color: #FFFFFF;
+	height: 250px;
+}
+
+footer {
+	background-color: $grayish_white;
+	height: 350px;
+}
+
+.static-header { 
+	height: 100%;
+	position: relative;
+
+	.navigation {
+		position: absolute;
+		bottom: 0;
+		background-color: $grayish_white;
+		height: 70px;
+		width: 100%;
+	}
+}
+
+.scroll-header {
+	display: none;
 	background-color: rgba(255, 255, 255, 0.8);
 	border-color: transparent;
 }
@@ -98,28 +123,21 @@ header, footer {
   justify-content: space-between;
 
 	.items {
-		width: 200px;
-		height: 225px;
 		margin-bottom: 15px;
 		border-radius: 5px;
 		background-color: $white_smoke;
 	}
 	
-	.items_even {
+	.items:hover, .zero:hover, .one:hover, .two:hover, .three:hover {
+		img {
+			  -webkit-filter: opacity(.2);
+  			filter: opacity(.2);
+		}
 	}
 
-	.items_odd {
-	}
-
-	.zero {
-	}
-
-	.one {
-	}
-
-	.two {
-	}
-
-	.three {
+	.zero, .one, .two, .three {
+		img {
+			border-radius: 5px;
+		}
 	}
 }

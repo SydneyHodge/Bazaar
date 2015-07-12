@@ -1,26 +1,28 @@
 <h1 class="even"> IT'S THAT TIME OF YEAR </h1>
 <div class="all_items">
 	<% for i in 0..5 do %>
- 		<% num = Random.rand(0...4) %> 
+	<%= link_to item_path do %>
+		<% num = Random.rand(0...4) %> 
 		<% if num == 0 %> 		
 		  	<div class="items items_odd zero">
-		  		<%= image_tag "zero.jpg",  width: '250', height: '250'%>
+		  		<%= image_tag "zero.jpg",  width: '200', height: '225'%>
 			</div>
 		<% end %>
 		<% if num == 1 %> 		
 		  	<div class="items items_odd one">
-		  		<%= image_tag "one.jpg",  width: '250', height: '250'%>
+		  		<%= image_tag "one.jpg",  width: '200', height: '225'%>
 			</div>
 		<% end %>
 		<% if num == 2 %> 		
 		  	<div class="items items_odd two">
-		  		<%= image_tag "two.jpeg",  width: '250', height: '250'%>
+		  		<%= image_tag "two.jpeg",  width: '200', height: '225'%>
 			</div>
 		<% end %>
 		<% if num == 3 %> 		
 		  	<div class="items items_odd three">
-		  		<%= image_tag "three.jpg",  width: '250', height: '250'%>
+		  		<%= image_tag "three.jpg",  width: '200', height: '225'%>
 			</div>
+		<% end %>
 		<% end %>
 	<% end %>
 </div>
