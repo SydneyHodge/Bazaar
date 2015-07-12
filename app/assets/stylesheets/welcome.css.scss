@@ -24,11 +24,11 @@ $grayish_white: #ECEAEB;
 	@include flex-direction(column);
 	min-height: 100vh;
 	position: relative;
-	background-color: $robinhood;
+	background-color: #FFFFFF;
 }
 
 h1, .even {
-	color: #FFFFFF;
+	color: $robinhood;
 }
 
 h1, .odd {
@@ -50,12 +50,12 @@ a:hover {
 }
 
 header { 
-	background-color: #FFFFFF;
+	background-color: $robinhood;
 	height: 250px;
 }
 
 footer {
-	background-color: $grayish_white;
+	background-color: $robinhood;
 	height: 350px;
 }
 
@@ -66,8 +66,10 @@ footer {
 	.navigation {
 		position: absolute;
 		bottom: 0;
-		background-color: $grayish_white;
-		height: 70px;
+		background-color: $robinhood;
+		border-width: 0 0 1px;
+		border-top: 1px solid #218868;
+		height: 50px;
 		width: 100%;
 	}
 }
