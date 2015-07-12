@@ -1,7 +1,26 @@
 <h1 class="odd"> STAPLES </h1>
 <div class="all_items">
 	<% for i in 0..5 do %>
-  	<div class="items items_even">
-		</div>
+		<% num = Random.rand(0...4) %> 
+		<% if num == 0 %> 		
+		  	<div class="items items_odd zero">
+		  		<%= image_tag "zero.jpg",  width: '200', height: '225'%>
+			</div>
+		<% end %>
+		<% if num == 1 %> 		
+		  	<div class="items items_odd one">
+		  		<%= image_tag "one.jpg",  width: '200', height: '225'%>
+			</div>
+		<% end %>
+		<% if num == 2 %> 		
+		  	<div class="items items_odd two">
+		  		<%= image_tag "two.jpeg",  width: '200', height: '225'%>
+			</div>
+		<% end %>
+		<% if num == 3 %> 		
+		  	<div class="items items_odd three">
+		  		<%= image_tag "three.jpg",  width: '200', height: '225'%>
+			</div>
+		<% end %>
 	<% end %>
 </div>
