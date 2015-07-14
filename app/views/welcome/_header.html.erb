@@ -22,7 +22,7 @@
 				BAZAAR
 			</div>
 
-				<div class="menu col-md-11">
+				<div class="menu col-md-7">
 					<ul>
 						<li><%= link_to "Home", root_path %></li>
 						<li><a href="#"> Tickets <span class="caret"></span></a>
@@ -56,6 +56,12 @@
 						</li>
 						<li><%= link_to "Furniture", "#" %></li>
 					</ul>
+				</div>
+
+				<div class="search-bar col-md-4">
+					<form method="get" action="/search" id="search">
+	 					<input name="q" type="text" size="40" placeholder="Search..." />
+					</form>
 				</div>
 		</div>
 	</div>
