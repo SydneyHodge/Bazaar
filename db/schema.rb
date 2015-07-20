@@ -11,7 +11,25 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150617021456) do
+ActiveRecord::Schema.define(version: 20150619020010) do
+
+  create_table "products", force: :cascade do |t|
+    t.string   "name"
+    t.string   "email"
+    t.string   "price"
+    t.integer  "quantity"
+    t.string   "tag"
+    t.string   "description"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
+
+  create_table "shopping_carts", force: :cascade do |t|
+    t.string   "email"
+    t.integer  "quantity"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "users", force: :cascade do |t|
     t.string   "email",                  default: "", null: false
@@ -30,5 +48,11 @@ ActiveRecord::Schema.define(version: 20150617021456) do
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true
   add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
+
+  create_table "wish_lists", force: :cascade do |t|
+    t.string   "email"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
 end
