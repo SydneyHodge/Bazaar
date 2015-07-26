@@ -1,0 +1,45 @@
+<div class="nav-logo col-md-1">
+  BAZAAR
+</div>
+
+<div class="menu col-md-7">
+<ul>
+  <li><%= link_to "Home", root_path %></li>
+  <li><a href="#"> Tickets <span class="caret"></span></a>
+    <div class="row">
+      <ul>
+        <li><%= link_to "Football", "#" %></li>
+        <li><%= link_to "Basketball", "#" %></li>
+        <li><%= link_to "Soccer", "#" %></li>
+        <li><%= link_to "Hockey", "#" %></li>
+        <li><%= link_to "Baseball", "#" %></li>
+      </ul>
+    </div>
+  </li>
+  <li><a href="#"> Electronics <span class="caret"></span></a>
+    <div>
+      <ul>
+        <li><%= link_to "Computers", "#" %></li>
+        <li><%= link_to "Phones", "#" %></li>
+      </ul>
+    </div>
+  </li>           
+  <li><a href="#"> Clothing <span class="caret"></span></a>
+    <div>
+      <ul>
+        <li><%= link_to "Shirts", "#" %></li>
+        <li><%= link_to "Pants", "#" %></li>
+        <li><%= link_to "Hats", "#" %></li>
+        <li><%= link_to "Socks", "#" %></li>
+      </ul>
+    </div>
+  </li>
+  <li><%= link_to "Furniture", "#" %></li>
+</ul>
+</div>
+
+<div class="search-bar col-md-4">
+<form method="get" action="/search" id="search">
+  <input name="q" type="text" size="40" placeholder="Search..." />
+</form>
+</div>
