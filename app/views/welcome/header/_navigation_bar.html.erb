@@ -3,10 +3,9 @@
 </div>
 
 <div class="menu col-md-7">
-<ul>
-  <li><%= link_to "Home", root_path %></li>
-  <li><a href="#"> Tickets <span class="caret"></span></a>
-    <div class="row">
+  <ul>
+    <li><%= link_to "Home", root_path %></li>
+    <li><a href="#"> Tickets <span class="caret"></span></a>
       <ul>
         <li><%= link_to "Football", "#" %></li>
         <li><%= link_to "Basketball", "#" %></li>
@@ -14,28 +13,35 @@
         <li><%= link_to "Hockey", "#" %></li>
         <li><%= link_to "Baseball", "#" %></li>
       </ul>
-    </div>
-  </li>
-  <li><a href="#"> Electronics <span class="caret"></span></a>
-    <div>
+    </li>
+    <li><a href="#"> Electronics <span class="caret"></span></a>
       <ul>
         <li><%= link_to "Computers", "#" %></li>
         <li><%= link_to "Phones", "#" %></li>
       </ul>
-    </div>
-  </li>           
-  <li><a href="#"> Clothing <span class="caret"></span></a>
-    <div>
+    </li>
+    <li><a href="#"> Clothing <span class="caret"></span></a>
       <ul>
-        <li><%= link_to "Shirts", "#" %></li>
-        <li><%= link_to "Pants", "#" %></li>
-        <li><%= link_to "Hats", "#" %></li>
-        <li><%= link_to "Socks", "#" %></li>
+        <li><%= link_to "Women", "#" %>
+          <ul>
+            <li><%= link_to "Shirts", "#" %></li>
+            <li><%= link_to "Pants", "#" %></li>
+            <li><%= link_to "Hats", "#" %></li>
+            <li><%= link_to "Socks", "#" %></li>
+          </ul>
+        </li>
+        <li><%= link_to "Men", "#" %>
+          <ul>
+            <li><%= link_to "Shirts", "#" %></li>
+            <li><%= link_to "Pants", "#" %></li>
+            <li><%= link_to "Hats", "#" %></li>
+            <li><%= link_to "Socks", "#" %></li>
+          </ul>
+        </li>
       </ul>
-    </div>
-  </li>
-  <li><%= link_to "Furniture", "#" %></li>
-</ul>
+    </li>
+    <li><%= link_to "Furniture", "#" %></li>
+  </ul>
 </div>
 
 <div class="search-bar col-md-4">
