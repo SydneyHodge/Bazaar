@@ -1,31 +1,19 @@
 <div id="wrapper">
 	<!-- Main content. --> 
 	<div class="main">
-		<!-- TODO(Syd): Create a header that is all white that is the first 1/5 of the page fixed at the top
-		so that when the user scrolls down past this area, the header div that is below shows and is fixed to the top of the page. Also, get rid of footer. --> 
 		<header class="navbar-top">
 			<%= render("header") %>
 		</header>
 
 		<!-- Items being sold. --> 
 		<div id="main-content">
-			<%= render("content") %>
+			<%= render("welcome/main_content/content") %>
 		</div>
-
-		<!-- TODO(Kam): Next two divs (menu & shopping_bag) should be hidden, appropriately sized, and should slide out when their respective footer buttons are clicked. --> 
-		<aside class="menu-aside">
-			this is the menu div that will be hidden.
-		</aside>
-
-		<aside  class="shopping-bag-aside">
-			this is the shopping bag that will be hidden.
-		</aside>
 
 	</div> <!-- /main -->	
 
 	<!-- Footer. -->
-	<!-- TODO(Syd/Kam): Create a footer that is at the bottom of the page, but is not fixed. -->
 	<footer class="navbar-bottom">
-		<%= render("footer") %>
+		<%= render("welcome/footer/footer") %>
 	</footer>
 </div> <!-- /wrapper --> 

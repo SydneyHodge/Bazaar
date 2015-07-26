@@ -1,5 +1,6 @@
 $gray: #B2B2B2;
 $off_black: #333333;
+$white: #FFFFFF;
 $robinhood: #21CE99;
 $dark_robinhood: #040D14;
 $white_smoke: #ECECEC;
@@ -7,12 +8,12 @@ $grayish_white: #ECEAEB;
 
 ::selection {
   background-color: $dark_robinhood;
-  color: #fff;
+  color: $white;
 }
 
 ::-moz-selection {
   background-color: $dark_robinhood;
-  color: #fff;
+  color: $white;
 }
 
 #wrapper{ 
@@ -25,7 +26,7 @@ $grayish_white: #ECEAEB;
 	@include flex-direction(column);
 	min-height: 100vh;
 	position: relative;
-	background-color: #FFFFFF;
+	background-color: $white;
 	
 	overflow-x: hidden;
 }
@@ -41,13 +42,13 @@ header {
 
 	a:hover {
 		text-decoration: none;
-		color: #FFFFFF;
+		color: $white;
 	}
 
 	.static-header { 
 		height: 100%;
 		position: relative;
-		color: #FFFFFF;
+		color: $white;
 
 		.top-buffer {
 			margin-top: 5px;
@@ -157,7 +158,7 @@ header {
 				}
 
 				ul > li > div ul > li > a {
-					color: #fff;
+					color: $white;
 					display: block;
 					padding: 12px 24px;
 					text-decoration: none;
@@ -170,7 +171,7 @@ header {
 				#search input[type="text"] {
 			    background: url(search-dark.png) no-repeat 10px 6px #989898;
 			    border: 1px solid $robinhood;
-			    color: #FFFFFF;
+			    color: $white;
 			    margin-top: 7px;
 			    width: 300px;
 			    padding: 6px 15px 6px 35px;
@@ -228,14 +229,6 @@ h1, .odd {
 	}
 }
 
-.shopping-bag-aside {
-	display: none;
-}
-
-.menu-aside {
-	display: none;
-}
-
 .fa { 
 	color: $off_black;
 }
@@ -279,20 +272,38 @@ h1, .odd {
 }
 
 footer {
-	color: #FFFFFF;
+	color: $white;
 	background-color: $dark_robinhood;
 	height: 350px;
+	font-size: 13px;
 
-	.container, .row, .static-footer {
+	.static-footer {
 		height: 100%;
+		position: relative;
 	}
 
-	.row {
-		width: 100%;
+	.fa {
+		color: $white;
+	}
+
+	.fa:hover {
+		color: $gray;
+	}
+
+	.bottom-info {
+		position: absolute;
+		bottom: 10px;
+		left: 100px;
 	}
 
 	.logo {
 		font-family: megrim, fantasy;
+	}
+
+	.sub-logo {
+		font-size: 20px;
+		margin-top: -25px;
+		margin-left: 30px;
 	}
 
 	.footer-logo {
@@ -302,5 +313,15 @@ footer {
 
 	h5 {
 		color: $robinhood;
+	}
+
+	a {
+		text-decoration: none;
+		color: $white;
+	}
+
+	a:hover {
+		color: $gray;
+		text-decoration: none;
 	}
 }
