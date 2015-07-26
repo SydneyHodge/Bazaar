@@ -278,6 +278,28 @@ h1, .odd {
 }
 
 footer {
+	color: #FFFFFF;
 	background-color: $dark_robinhood;
 	height: 350px;
+
+	.container, .row, .static-footer {
+		height: 100%;
+	}
+
+	.row {
+		width: 100%;
+	}
+
+	.logo {
+		font-family: megrim, fantasy;
+	}
+
+	.footer-logo {
+		font-family: megrim, fantasy;
+		font-size: 85px;	
+	}
+
+	h5 {
+		color: $robinhood;
+	}
 }

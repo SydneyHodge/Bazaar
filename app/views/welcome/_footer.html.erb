@@ -1,22 +1,39 @@
-<div class="container-fluid row">
+<div class="container row">
+	<div class="static-footer">
+		<div class="row-sm-10">
+			<div class="footer-logo col-md-5">
+				BAZAAR
+			</div>
+			<div class="col-md-2">
+				<h5>KEEP LOOKING</h5>
+				<div class="row-md-1">
+					<%= link_to "#", :target => "_blank" do %>
+						<i class="fa fa-twitter fa-1x"></i>
+					<% end %>
+					Twitter
+	    	</div>
+	    	<div class="row-md-1">
+					<%= link_to "#", :target => "_blank" do %>
+						<i class="fa fa-facebook fa-1x"></i>
+					<% end %>
+					Facebook
+	    	</div>
+			</div>
+			<div class="col-md-2">
+				<h5><span class="logo">BAZAAR</span> ON</h5>
+			</div>
+			<div class="col-md-3">
+				<h5>MORE STUFF</h5>
+			</div>
+		</div>
 
-  	<!-- Three columns --> 
-<!--     <div class="col-md-3 text-center vcenter">
-			<%= link_to "#", :target => "_blank" do %>
-				<i class="fa fa-facebook fa-2x"></i>
-			<% end %>
-    </div>
-
-    <div class="col-md-6 text-center">
-		  <%= link_to root_path do %>
-		    <%= image_tag "bazaar_logo_1.png", id: "logo", width: '200', height: '50' %>
-		  <% end %>
-    </div>
-  
-    <div class="col-md-3 text-right text-center vcenter">
-			<%= link_to "#", :target => "_blank" do %>
-				<i class="fa fa-twitter fa-2x"></i>
-			<% end %>
-    </div> -->
-
+		<div class="row-sm-2">
+			<div class="col-sm-6 text-bottom">
+				&copy; 2015 <span class="logo">BAZAAR</span>, Inc. All Rights Reserved.
+			</div>
+			<div class="col-sm-6 text-bottom">
+		    Made with <i class="fa fa-heart"></i> in Columbus, OH.
+			</div>
+		</div>
+	</div>
 </div>
