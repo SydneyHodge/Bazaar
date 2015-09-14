@@ -259,7 +259,8 @@ footer {
 	background-color: $dark_robinhood;
 	height: 350px;
 	font-size: 13px;
-
+	overflow: hidden; 
+	
 	.static-footer {
 		height: 100%;
 		position: relative;
@@ -274,9 +275,9 @@ footer {
 	}
 
 	.bottom-info {
+		width: 100%;
 		position: absolute;
 		bottom: 10px;
-		left: 100px;
 	}
 
 	.logo {
