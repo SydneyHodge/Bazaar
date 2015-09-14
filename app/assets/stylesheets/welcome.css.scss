@@ -83,13 +83,17 @@ header {
 			}
 
 			.menu {
+				display: flex;
+				justify-content: space-between;
 				margin: 0;
 				padding: 0;
+				padding-left: 8px;
 
 				ul {
 					list-style: none;
 					position: relative;
 					display: inline-table;
+    			-webkit-padding-start: 20px !important;
 
 					ul {
 						display: none;
@@ -101,9 +105,9 @@ header {
 						li {
 							float: none; 
 							position: relative;
-			        background-color: rgb(40, 44, 47);
-	        		box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.055);
-	        		margin: 0;
+			        		background-color: rgb(40, 44, 47);
+	        				box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.055);
+	        				margin: 0;
 						}
 
 						ul {
@@ -139,6 +143,11 @@ header {
 					clear: both;
 					display: block;
 				}
+			}
+
+			#search {
+		    display: flex;
+    		justify-content: flex-end;
 			}
 
 			#search input[type="text"] {
@@ -190,6 +199,7 @@ h1, .odd {
 
 #main-content {
 	margin: 50px 0;
+	min-height: 350px;
 
 	.box {
 		padding: 10px 50px 0 50px;
