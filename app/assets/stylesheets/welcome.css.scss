@@ -83,8 +83,15 @@ header {
 			}
 
 			.menu {
-				display: flex;
-				justify-content: space-between;
+			  display: -webkit-box;
+			  display: -moz-box;
+			  display: -ms-flexbox;
+			  display: -webkit-flex;
+			  display: flex;
+
+	      -webkit-justify-content: space-between;
+								justify-content: space-between;
+
 				margin: 0;
 				padding: 0;
 				padding-left: 8px;
@@ -94,6 +101,7 @@ header {
 					position: relative;
 					display: inline-table;
     			-webkit-padding-start: 20px !important;
+    							padding-start: 20px !important;
 
 					ul {
 						display: none;
@@ -105,9 +113,9 @@ header {
 						li {
 							float: none; 
 							position: relative;
-			        		background-color: rgb(40, 44, 47);
-	        				box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.055);
-	        				margin: 0;
+	        		background-color: rgb(40, 44, 47);
+      				box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.055);
+      				margin: 0;
 						}
 
 						ul {
@@ -130,7 +138,7 @@ header {
 					}
 
 					li:hover {
-          	background-color: rgb(40, 44, 47);
+    				background-color: rgb(40, 44, 47);
 					}
 
 					li:hover > ul {
@@ -146,8 +154,13 @@ header {
 			}
 
 			#search {
-		    display: flex;
-    		justify-content: flex-end;
+		      display: -webkit-box;
+				  display: -moz-box;
+				  display: -ms-flexbox;
+				  display: -webkit-flex;
+				  display: flex;
+				  -webkit-justify-content: flex-end;
+	    						justify-content: flex-end;
 			}
 
 			#search input[type="text"] {
@@ -232,7 +245,9 @@ h1, .odd {
   display: flex;
   
   -webkit-flex-flow: row wrap;
-  justify-content: space-between;
+  				flex-flow: row wrap;
+  -webkit-justify-content: space-between;
+  				justify-content: space-between;
 
 	.items {
 		margin-bottom: 15px;
