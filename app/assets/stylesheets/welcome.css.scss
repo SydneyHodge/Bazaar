@@ -33,7 +33,7 @@ $grayish_white: #ECEAEB;
 
 header {
 	background-color: $dark_robinhood;
-	height: 250px;
+	height: 50px;
 
 	a {
 		color: $robinhood;
@@ -89,8 +89,8 @@ header {
 			  display: -webkit-flex;
 			  display: flex;
 
-	      -webkit-justify-content: space-between;
-								justify-content: space-between;
+	      		-webkit-justify-content: center;
+						justify-content: center;
 
 				margin: 0;
 				padding: 0;
@@ -100,8 +100,8 @@ header {
 					list-style: none;
 					position: relative;
 					display: inline-table;
-    			-webkit-padding-start: 20px !important;
-    							padding-start: 20px !important;
+    				-webkit-padding-start: 0px !important;
+    							padding-start: 0px !important;
 
 					ul {
 						display: none;
@@ -113,9 +113,9 @@ header {
 						li {
 							float: none; 
 							position: relative;
-	        		background-color: rgb(40, 44, 47);
-      				box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.055);
-      				margin: 0;
+			        		background-color: rgb(40, 44, 47);
+		      				box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.055);
+		      				margin: 0;
 						}
 
 						ul {
@@ -130,11 +130,11 @@ header {
 					}
 
 					li > a {
-	        	display: block;
-	        	line-height: 48px;
-	        	padding: 0 20px;
-	        	text-decoration: none;
-	        	font-size: 15px;
+			        	display: block;
+			        	line-height: 48px;
+			        	padding: 0 20px;
+			        	text-decoration: none;
+			        	font-size: 13px;
 					}
 
 					li:hover {
@@ -164,28 +164,49 @@ header {
 			}
 
 			#search input[type="text"] {
-		    background: url(search-dark.png) no-repeat 10px 6px #989898;
-		    border: 1px solid $robinhood;
-		    color: $white;
-		    margin-top: 7px;
-		    width: 300px;
-		    padding: 6px 15px 6px 35px;
-		    -webkit-border-radius: 20px;
-		       -moz-border-radius: 20px;
-		            border-radius: 20px;
-		    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
-		    -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 3px rgba(0, 0, 0, 0.2) inset;
-		       -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 3px rgba(0, 0, 0, 0.2) inset;
-		            box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 3px rgba(0, 0, 0, 0.2) inset;
-		    -webkit-transition: all 0.7s ease 0s;
-		       -moz-transition: all 0.7s ease 0s;
-		         -o-transition: all 0.7s ease 0s;
-		            transition: all 0.7s ease 0s;
-  		}
+			    background: url(search-dark.png) no-repeat 10px 6px #989898;
+			    border: 1px solid $robinhood;
+			    color: $white;
+			    margin-top: 7px;
+			    width: 300px;
+			    padding: 6px 15px 6px 35px;
+			    -webkit-border-radius: 20px;
+			       -moz-border-radius: 20px;
+			            border-radius: 20px;
+			    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+			    -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 3px rgba(0, 0, 0, 0.2) inset;
+			       -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 3px rgba(0, 0, 0, 0.2) inset;
+			            box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 3px rgba(0, 0, 0, 0.2) inset;
+			    -webkit-transition: all 0.7s ease 0s;
+			       -moz-transition: all 0.7s ease 0s;
+			         -o-transition: all 0.7s ease 0s;
+			            transition: all 0.7s ease 0s;
+			}
 
 			#search input[type="text"]:focus {
-  			width: 350px;
-  		}
+  				width: 350px;
+  			}
+
+	  		.nav-icons {
+	  			height: 100%;
+			    display: -webkit-box;
+				display: -moz-box;
+				display: -ms-flexbox;
+				display: -webkit-flex;
+				display: flex;
+			    -webkit-justify-content: space-around;
+					    justify-content: space-around;
+				align-items: center;
+
+				.fa {
+					color: $grayish_white;
+				}
+
+				.fa:hover {
+					color: $gray;
+				}
+
+	  		}
 		}
 	}
 
@@ -302,7 +323,7 @@ footer {
 	.sub-logo {
 		font-size: 20px;
 		margin-top: -25px;
-		margin-left: 30px;
+		margin-left: 22px;
 	}
 
 	.footer-logo {
