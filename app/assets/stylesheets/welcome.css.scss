@@ -238,12 +238,6 @@ h1, .odd {
 	.box {
 		padding: 10px 50px 0 50px;
 	}
-
-	.even_box {
-	}
-
-	.odd_box {
-	}
 }
 
 .fa { 
@@ -266,14 +260,26 @@ h1, .odd {
   display: flex;
   
   -webkit-flex-flow: row wrap;
-  				flex-flow: row wrap;
+  	      flex-flow: row wrap;
   -webkit-justify-content: space-between;
-  				justify-content: space-between;
+  		  justify-content: space-between;
 
 	.items {
 		margin-bottom: 15px;
 		border-radius: 5px;
-		background-color: $white_smoke;
+		background-color: $white;
+		.item_info {
+			font-size: 12px;
+			text-align: center;
+			background-color: $white;
+			.product_name {
+
+			}
+
+			.product_price {
+
+			}
+		}
 	}
 	
 	.items:hover, .zero:hover, .one:hover, .two:hover, .three:hover {
