@@ -2,8 +2,6 @@
 
 To run this web application, clone the Github repository and CD into the folder cloned (default is Bazaar). To view the cloned application, run <em>rails server</em> in the terminal and in your web browser go to localhost:3000.
 
-Things you may want to cover:
-
 * Ruby version 
 	
 	* Ruby 2.2.2 with rbenv as Ruby manager.
