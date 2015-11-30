@@ -1,0 +1,60 @@
+$gray: #B2B2B2;
+$dark_robinhood: #040D14;
+$robinhood: #21CE99;
+$white: #FFFFFF;
+
+footer {
+	color: $white;
+	background-color: $dark_robinhood;
+	height: 350px;
+	font-size: 13px;
+	overflow: hidden; 
+	
+	.static-footer {
+		height: 100%;
+		position: relative;
+	}
+
+	.fa {
+		color: $white;
+	}
+
+	.fa:hover {
+		color: $gray;
+	}
+
+	.bottom-info {
+		width: 100%;
+		position: absolute;
+		bottom: 10px;
+	}
+
+	.logo {
+		font-family: megrim, fantasy;
+	}
+
+	.sub-logo {
+		font-size: 20px;
+		margin-top: -25px;
+		margin-left: 22px;
+	}
+
+	.footer-logo {
+		font-family: megrim, fantasy;
+		font-size: 85px;	
+	}
+
+	h5 {
+		color: $robinhood;
+	}
+
+	a {
+		text-decoration: none;
+		color: $white;
+	}
+
+	a:hover {
+		color: $gray;
+		text-decoration: none;
+	}
+}
