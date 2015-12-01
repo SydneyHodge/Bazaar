@@ -40,8 +40,16 @@ footer {
 	}
 
 	.footer-logo {
-		font-family: megrim, fantasy;
-		font-size: 85px;	
+		a {
+			font-family: megrim, fantasy;
+			font-size: 85px;
+			text-decoration: none;
+			color: $white;
+		}
+
+		a:hover {
+			color: $white;
+		}
 	}
 
 	h5 {

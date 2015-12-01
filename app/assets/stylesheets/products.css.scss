@@ -1,3 +1,4 @@
+$dark_robinhood: #040D14;
 $gray: #B2B2B2;
 $off_black: #333;
 $robinhood: #21CE99;
@@ -12,13 +13,27 @@ $robinhood: #21CE99;
   color: #fff;
 }
 
-.container-fluid, .row, .box_left, .box_right { 
-	height: 100%;
-}
+.product_content {
+	min-height: 350px;
+	height: auto !important;
+	height: 350px;
 
-.box_left {
-	border-right: 1px solid $robinhood; 
-}
+	.box_right {
+		// overflow-y: auto;
+	}
 
-.box_right {
+	.box_left {
+
+		// display: -webkit-box;
+		// display: -moz-box;
+		// display: -ms-flexbox;
+		// display: -webkit-flex;
+		// display: flex;  
+
+		// @include flex-direction(column);
+
+		// overflow: hidden;
+		// position: relative;
+		// top: 20px;
+	}
 }

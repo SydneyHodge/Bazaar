@@ -3,6 +3,8 @@ $white: #FFFFFF;
 #main-content {
 	margin: 50px 0;
 	min-height: 350px;
+	height: auto !important;
+	height: 350px;
 
 	.box {
 		padding: 10px 50px 0 50px;

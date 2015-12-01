@@ -17,3 +17,18 @@ body {
 	background-color: #fff;
 	color: #040D14;
 }
+
+#wrapper{ 
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;  
+
+	@include flex-direction(column);
+	min-height: 100vh;
+	position: relative;
+	background-color: $white;
+	
+	overflow-x: hidden;
+}

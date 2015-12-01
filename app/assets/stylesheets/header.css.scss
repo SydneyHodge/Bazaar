@@ -50,8 +50,12 @@ header {
 			display: block;
 
 			.nav-logo {
-				font-family: megrim, fantasy;
-				font-size: 35px;
+				a {
+					font-family: megrim, fantasy;
+					font-size: 35px;
+					text-decoration: none;
+					color: $white;
+				}
 			}
 
 			.menu {
