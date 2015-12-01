@@ -8,7 +8,7 @@ $white: #FFFFFF;
 		padding: 10px 50px 0 50px;
 	}
 
-	.all_items {
+	.all_products {
 	  padding: 0;
 	  margin: 0;
 	  list-style: none;
@@ -24,18 +24,18 @@ $white: #FFFFFF;
 	  -webkit-justify-content: space-between;
 	  		  justify-content: space-between;
 
-		.items {
+		.products {
 			margin-bottom: 15px;
 			border-radius: 5px;
 			background-color: $white;
-			.item_info {
+			.product_info {
 				font-size: 12px;
 				text-align: left;
 				background-color: $white;
 			}
 		}
 		
-		.items:hover, .zero:hover, .one:hover, .two:hover, .three:hover {
+		.products:hover, .zero:hover, .one:hover, .two:hover, .three:hover {
 			img {
 				  -webkit-filter: opacity(.2);
 	  			filter: opacity(.2);
