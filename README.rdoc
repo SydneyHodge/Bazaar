@@ -1,6 +1,6 @@
-== README
+== Bazaar TCM
 
-To run this web application, clone the Github repository and CD into the folder cloned (default is Bazaar). To view the cloned application, run <em>rails server</em> in the terminal and in your web browser go to localhost:3000.
+Bazaar is The College Marketplace. Bazaar aims to showcase affordably priced student products to other college students in a structured, simplistic way. Bazaar's focus is on aligning college student buyers with college student sellers. Bazaar is an exclusive experience for specific universities. Bazaar intends to launch first at The Ohio State University in 2016. 
 
 * Ruby version 
 	
@@ -10,20 +10,4 @@ To run this web application, clone the Github repository and CD into the folder 
 
 	* Uses Bootstrap 3.3.4, Compass's Flexbox, and Font Awesome.
 
-* Configuration
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ... 
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
