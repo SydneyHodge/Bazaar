@@ -1,0 +1,41 @@
+.all_products {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+  
+	-webkit-flex-flow: row wrap;
+		    flex-flow: row wrap;
+	-webkit-justify-content: space-between;
+			justify-content: space-between;
+	margin-right: 6px;
+	color: black;
+
+	.products {
+		margin-bottom: 15px;
+		border-radius: 5px;
+
+		.product_info {
+			font-size: 12px;
+			text-align: left;
+		}
+	}
+	
+	.products:hover {
+		img {
+			  -webkit-filter: opacity(.2);
+  			filter: opacity(.2);
+		}
+	}
+
+	.products {
+		img {
+			border-radius: 5px;
+		}
+	}
+}

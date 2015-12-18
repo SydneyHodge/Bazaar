@@ -1,7 +1,7 @@
 $white: #FFFFFF;
 
 #main-content {
-	margin: 50px 0;
+	margin: 15px 0;
 	min-height: 350px;
 	height: auto !important;
 	height: 350px;
@@ -37,14 +37,14 @@ $white: #FFFFFF;
 			}
 		}
 		
-		.products:hover, .zero:hover, .one:hover, .two:hover, .three:hover {
+		.products:hover {
 			img {
 				  -webkit-filter: opacity(.2);
 	  			filter: opacity(.2);
 			}
 		}
 
-		.zero, .one, .two, .three {
+		.products {
 			img {
 				border-radius: 5px;
 			}

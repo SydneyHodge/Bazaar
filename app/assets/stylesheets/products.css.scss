@@ -1,39 +1,175 @@
+@import "recommended_items";
+
 $dark_robinhood: #040D14;
 $gray: #B2B2B2;
 $off_black: #333;
 $robinhood: #21CE99;
+$white_smoke: #ECECEC;
+$white: #FFFFFF;
 
 ::selection {
   background-color: $robinhood;
-  color: #fff;
+  color: $white;
 }
 
 ::-moz-selection {
   background-color: $robinhood;
-  color: #fff;
+  color: $white;
 }
 
 .product_content {
-	min-height: 350px;
-	height: auto !important;
-	height: 350px;
+	height: 750px;
 
-	.box_right {
-		// overflow-y: auto;
+	min-width: 100%;
+	width: auto !important;
+	width: 100%;
+
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;  
+
+	@include flex-direction(row);
+
+	.both_boxes {
+		display: -webkit-box;
+		display: -moz-box;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+		display: flex;  
+
+		@include flex-direction(column);
+
+		height: 100%;
+		padding: 0 15px;
 	}
 
-	.box_left {
+	#box_right {
+		flex-grow: 1;
+		background-color: #F3F3F3;
+		overflow: scroll;
 
-		// display: -webkit-box;
-		// display: -moz-box;
-		// display: -ms-flexbox;
-		// display: -webkit-flex;
-		// display: flex;  
+		#product_header {
+			.product_title {
+				#offer_btn {
+					float: right;
+					vertical-align: middle;
+					background-color: $robinhood;
+					color: $dark_robinhood;
+					border: 1px solid $dark_robinhood;
+				}
 
-		// @include flex-direction(column);
+				#offer_btn:hover {
+					background-color: $white;
+				}
+			}			
+		}
 
-		// overflow: hidden;
-		// position: relative;
-		// top: 20px;
+		#buyer_content {
+			margin-bottom: 10px;
+			margin-top: -10px;
+		}
+
+		#product_description_input {
+			color: black; 
+			font-size: 14px;
+			width: 600px;
+			margin-top: -17px;
+			padding: 10px;
+		}
+
+		hr {
+			background-color: $off_black;
+			height: 1px;
+			margin-top: 2px;
+		}
+		.price {
+			color: #b12704;
+		}
+
+		.headers {
+			color: $robinhood;
+			font-size: 17px;
+			
+			#product_price {
+				font-size: 14px;
+				color: black;
+				margin-bottom: 10px;
+				margin-top: -17px;
+			}
+
+			#offer_content {
+				margin-top: -17px;
+				.offer {
+					margin-bottom: 5px;
+					color: black;
+					font-size: 14px;
+					.strikethrough {
+						text-decoration: line-through;
+					}
+				}
+			}
+
+			#recommended_items {
+				width: 600px;
+			}
+		}
+	}
+
+	#box_left {
+		flex-grow: 1;
+		background-color: $white;
+		overflow: scroll;
+
+		#image_content { 
+			display: -webkit-box;
+			display: -moz-box;
+			display: -ms-flexbox;
+			display: -webkit-flex;
+			display: flex;  
+
+			@include flex-direction(column);
+			margin-top: 30px;
+
+			#main_image {
+				display: -webkit-box;
+				display: -moz-box;
+				display: -ms-flexbox;
+				display: -webkit-flex;
+				display: flex;  
+
+			    -webkit-flex-flow: row wrap;
+			  	        flex-flow: row wrap;
+			    -webkit-justify-content: space-around;
+	  		  		    justify-content: space-around;
+
+			}
+
+			#smaller_images {
+				display: -webkit-box;
+				display: -moz-box;
+				display: -ms-flexbox;
+				display: -webkit-flex;
+				display: flex;  
+
+			    -webkit-flex-flow: row wrap;
+			  	        flex-flow: row wrap;
+			    -webkit-justify-content: space-around;
+	  		  		    justify-content: space-around;
+
+	  		  	margin-top: 15px;
+			}
+
+			#image_1, #image_2, #image_3 {
+				display: inline-block;
+	  		  	border: 1px solid $gray;
+	  		  	border-radius: 2px;
+			}
+
+			#image_1:hover, #image_2:hover, #image_3:hover {
+				box-shadow: 0 0 12px $robinhood;
+			}
+		}
 	}
 }

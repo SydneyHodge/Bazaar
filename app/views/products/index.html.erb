@@ -1,23 +1,72 @@
-<div class="product_content container-fluid">
-	<div class="col-lg-4 box_left">
-		<div id="product_title" class="temp">
-			<h1> Product Title </h1>
-		</div>
+<div class="product_content">
+	<div id="box_left" class="both_boxes">
+		<div id="image_content">
+			<div id="main_image">
+		  		<%= link_to (image_tag "zero.jpg",  width: '450', height: '325'), products_path %>
+			</div>
 
-		<div class="temp">
-			test
-		</div>
-
-		<div class="temp">
-			test 2
-		</div>
-
-		<div class="temp">
-			test 3
+			<div id="smaller_images">
+				<div id="image_1">
+		  			<%= link_to (image_tag "zero.jpg",  width: '150', height: '150'), products_path %>
+				</div>
+				<div id="image_2">
+		  			<%= link_to (image_tag "zero.jpg",  width: '150', height: '150'), products_path %>
+				</div>
+				<div id="image_3">
+		  			<%= link_to (image_tag "zero.jpg",  width: '150', height: '150'), products_path %>
+				</div>
+			</div>
 		</div>
 	</div>
 
-	<div class="col-lg-8 box_right">
+	<div id="box_right" class="both_boxes">
+		<div id="product_header">
+			<div class="product_title" class="temp">
+				<h1> Antique Camera 
+  					<button type="button" id="offer_btn" class="btn">Make Offer</button>
+				</h1>
+			</div>
+		</div>
+
+		<div id="buyer_content">
+			by Joe Shmoe
+		</div>
+
+		<div class="headers">
+			Product Description
+			<hr>
+
+			<div id="product_price">
+				Asking Price: <span class="price"> $200.00 </span>
+			</div>
+			<div id="product_description_input">
+				Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+			</div>
+		</div>
+
+		<div class="headers">
+			Current offers
+			<hr>
+			<div id="offer_content">
+				<div class="offer">
+					<span class="strikethrough">Billy Jean offered <span class="price"> $130.00 </span></span>
+				</div>
+				<div class="offer">
+					Bob Smith offered <span class="price"> $150.00 </span>
+				</div>
+				<div class="offer">
+					Anonymous offered <span class="price"> $170.00 </span>
+				</div>
+			</div>
+		</div>
+
+		<div class="headers">
+			Recommended Items
+			<hr>
+			<div id="recommended_items">
+				<%= render('products/recommended_items') %>
+			</div>
+		</div>
 	</div>
 </div>
 
