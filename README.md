@@ -1,4 +1,5 @@
-== Bazaar TCM
+Bazaar TCM
+==========
 
 Bazaar is The College Marketplace. Bazaar aims to showcase affordably priced student products to other college students in a structured, simplistic way. Bazaar's focus is on aligning college student buyers with college student sellers. Bazaar is an exclusive experience for specific universities. Bazaar intends to launch first at The Ohio State University in 2016. 
 
