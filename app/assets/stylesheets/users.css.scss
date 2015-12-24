@@ -1,0 +1,119 @@
+$white_smoke: #ECECEC;
+
+::selection {
+  background-color: $robinhood;
+  color: $white;
+}
+
+::-moz-selection {
+  background-color: $robinhood;
+  color: $white;
+}
+#user_wrapper {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+
+	@include flex-direction(column);
+	-webkit-justify-content: center;
+			justify-content: center;
+	-webkit-align-items: center;
+			align-items: center;
+
+	width: 100%;
+}
+
+#users_content {
+	min-height: 750px;
+	height: auto !important;
+	height: 750px;
+
+	width: 950px;
+
+	#user_title {
+		font-size: 36px;
+		margin: 15px 0 10px 8px;
+	}
+
+	#hist_setting {
+		display: -webkit-box;
+		display: -moz-box;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+		display: flex;
+
+		@include flex-direction(column);
+		-webkit-justify-content: center;
+				justify-content: center;
+		-webkit-align-items: center;
+				align-items: center;
+		overflow-y: scroll;
+	}
+
+	.title {
+		font-weight: 700;
+		color: $robinhood;
+		font-size: 17px;
+		margin: 13px  10px;
+	}
+
+	#history_content, #setting_content {
+		display: block;
+		border: 1px #DDDDDD solid;
+		border-radius: 4px;
+		width: 100%;
+		height: 350px;
+		margin: 15px 0;
+	}
+
+	#history_content {
+		overflow-y: scroll;
+		hr {
+			margin-top: 15px;
+		}
+
+		#history_content_title, #history_items {
+			width: 100%;
+
+			.row {
+				margin-bottom: 4px;
+			}
+
+			.heading {
+				font-size: 16px;
+				font-weight: 500;
+				color: $off_black;
+			}
+
+			.history_item {
+				font-size: 13px;
+			}
+		}
+	}
+
+	#setting_content {
+		overflow-y: scroll;
+
+		#edit_btn {
+			float: right;
+			vertical-align: middle;
+			background-color: $white_smoke;
+			color: $dark_robinhood;
+			border: 1px solid $dark_robinhood;
+		}
+
+		#edit_btn:hover {
+			background-color: $white;
+		}
+
+		.header {
+			font-weight: 600;
+		}
+
+		#setting_name {
+			width: 100%;
+		}
+	}
+}

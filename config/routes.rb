@@ -3,6 +3,7 @@ Rails.application.routes.draw do
 
   resources :products
   resources :carts
+  resources :users
 
   match ':controller(/:action(/:id))(.:format)', :via => [:get, :post]
 
