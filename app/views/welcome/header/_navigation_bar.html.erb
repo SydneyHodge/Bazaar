@@ -61,21 +61,14 @@
     </li>
     <li><%= link_to "Textbooks", "#" %></li>
     <li><a href="#">Housing</a></li>
-
   </ul>
 </div>
 
 <div class="nav-icons col-md-2">
-<!--   <form method="get" action="/search" id="search">
-    <input name="q" type="text" size="40" placeholder="Search..." />
-  </form> -->
-
     <%= link_to "#" do %>
       <i class="fa fa-search fa-2x"></i>
     <% end %>
-    <%= link_to "#" do %>
-      <i class="fa fa-user fa-2x"></i>
-    <% end %>
+    <%= render("welcome/header/signed_out_user") %>
 </div>
 
 

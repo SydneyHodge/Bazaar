@@ -79,7 +79,7 @@ header {
 					position: relative;
 					display: inline-table;
     				-webkit-padding-start: 0px !important;
-    							padding-start: 0px !important;
+    					    padding-start: 0px !important;
 
 					ul {
 						display: none;
@@ -133,12 +133,12 @@ header {
 
 			#search {
 		      display: -webkit-box;
-				  display: -moz-box;
-				  display: -ms-flexbox;
-				  display: -webkit-flex;
-				  display: flex;
-				  -webkit-justify-content: flex-end;
-	    						justify-content: flex-end;
+			  display: -moz-box;
+			  display: -ms-flexbox;
+			  display: -webkit-flex;
+			  display: flex;
+			  -webkit-justify-content: flex-end;
+					  justify-content: flex-end;
 			}
 
 			#search input[type="text"] {
@@ -182,6 +182,10 @@ header {
 
 				.fa:hover {
 					color: $gray;
+				}
+
+				a {
+					margin-bottom: 8px;
 				}
 
 	  		}

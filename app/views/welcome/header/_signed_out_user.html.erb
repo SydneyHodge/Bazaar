@@ -1,10 +1,13 @@
 <div id="user_content_wrapper">
-	<div id="cart">
-		Cart
-	</div>
-	<div id="sign_in">
-		Sign In
-	</div>
+	<ul>
+		<li>
+		    <%= link_to "#" do %>
+		      <i class="fa fa-user fa-2x"></i>
+		    <% end %>
+			<ul>
+        		<li><%= link_to "Cart", "#" %></li>
+				<li><%= link_to "Sign In", new_user_session_path %></li>
+			<ul>
+		</li>
+	</ul>
 </div>
-
-<!-- Will be an unordered list. -->
