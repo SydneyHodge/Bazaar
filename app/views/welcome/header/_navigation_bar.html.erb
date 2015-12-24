@@ -68,7 +68,13 @@
     <%= link_to "#" do %>
       <i class="fa fa-search fa-2x"></i>
     <% end %>
-    <%= render("welcome/header/signed_out_user") %>
+
+    <% if user_signed_in? %>
+      <%= render("welcome/header/signed_in_user") %>
+    <% else %>
+        <%= render("welcome/header/signed_out_user") %>
+    <% end %>
+
 </div>
 
 
