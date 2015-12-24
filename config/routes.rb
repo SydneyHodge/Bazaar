@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   devise_for :users
 
   resources :products
+  resources :carts
 
   match ':controller(/:action(/:id))(.:format)', :via => [:get, :post]
 

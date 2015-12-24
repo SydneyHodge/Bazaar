@@ -1,0 +1,102 @@
+<div id="cart_content">
+	<div id="cart_title">
+		Your Cart
+	</div>
+
+	<hr>
+
+	<div class="cart_product container">
+		<div class="row">
+	  		<div class="col-md-4">
+	  			<div class="product_info">
+	  				<div class="product_name">
+	  					Jacket
+	  				</div>
+	  				<div class="product_price">
+	  					$170
+	  				</div>
+	  			</div>
+	  		</div>
+
+	  		<div class="col-md-3">
+		  		<%= link_to (image_tag "two.jpeg",  width: '200', height: '225'), products_path  %>
+	  		</div>
+
+	  		<div class="col-md-5">
+	  			<div class="product_status">
+	  				Status
+	  			</div>
+	  			<div class="stutus">
+	  				Buyer has accepted your offer. You can pick up this product when you're ready.
+	  			</div>
+	  		</div>
+	  	</div>
+	</div>
+
+	<hr>
+
+	<div class="cart_product container">
+		<div class="row">
+	  		<div class="col-md-4">
+	  			<div class="product_info">
+	  				<div class="product_name">
+	  					Bike
+	  				</div>
+	  				<div class="product_price">
+	  					$290
+	  				</div>
+	  			</div>
+	  		</div>
+
+	  		<div class="col-md-3">
+		  		<%= link_to (image_tag "one.jpg",  width: '200', height: '225'), products_path  %>
+	  		</div>
+
+	  		<div class="col-md-5">
+	  			<div class="product_status">
+	  				Status
+	  			</div>
+	  			<div class="stutus">
+	  				Buyer has yet to accept or decline your offer.
+	  			</div>
+	  		</div>
+	  	</div>
+	</div>
+
+	<hr>
+
+
+		<div class="cart_product container">
+		<div class="row">
+	  		<div class="col-md-4">
+	  			<div class="product_info">
+	  				<div class="product_name">
+	  					Macbook Pro
+	  				</div>
+	  				<div class="product_price">
+	  					$880
+	  				</div>
+	  			</div>
+	  		</div>
+
+	  		<div class="col-md-3">
+		  		<%= link_to (image_tag "three.jpg",  width: '200', height: '225'), products_path  %>
+	  		</div>
+
+	  		<div class="col-md-5">
+	  			<div class="product_status">
+	  				Status
+	  			</div>
+	  			<div class="stutus">
+	  				Buyer has declined your offer.
+	  			</div>
+	  		</div>
+	  	</div>
+	</div>
+
+	<hr>
+
+	<div id="total" class="container-fluid">
+		Total: <span id="total_price"> $460 </span>
+	</div>
+</div>

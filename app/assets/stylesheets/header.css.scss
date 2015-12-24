@@ -1,5 +1,5 @@
 @import "user_account_content";
-@import "cart";
+@import "carts";
 
 $dark_robinhood: #040D14;
 $grayish_white: #ECEAEB;
@@ -9,6 +9,8 @@ $white: #FFFFFF;
 header {
 	background-color: $dark_robinhood;
 	height: 50px;
+	position: relative;
+	z-index: 999;
 
 	a {
 		color: $robinhood;
