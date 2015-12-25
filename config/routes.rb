@@ -5,10 +5,8 @@ Rails.application.routes.draw do
   resources :carts
   resources :contact
   resources :developers
-  resources :issues
   resources :jobs
   resources :products
-  resources :site
   resources :users
 
   match ':controller(/:action(/:id))(.:format)', :via => [:get, :post]

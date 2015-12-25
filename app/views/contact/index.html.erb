@@ -1,2 +1,47 @@
-<div id="contact_content">
+<div id="contact_content" class="container">
+	<div class="row header">
+		Get in touch with us!
+	</div>
+
+	<div class="sub-header">
+		If you have any questions or concerns please feel free to contact us. You can use the form below to do so. You can also email us directly at info@bazaartcm.com.
+
+		<br><br>
+
+		Thank you! 
+	</div>
+
+	<hr>
+
+	<div class="row content">
+		<div class="form_tag">
+			<%= form_tag("/search", method: "get") do %>
+				<div>
+					<%= label_tag(:q, "Name", class: 'name_content') %>
+					<br>
+					<%= text_field_tag(:q) %>
+				</div>
+
+				<div>
+					<%= label_tag(:q, "Order Number", class: 'order_content') %>
+					<br>
+					<%= text_field_tag(:q) %>
+				</div>
+
+				<div>
+					<%= label_tag(:q, "Email", class: 'email_content') %><span class="asterisk">*</span>
+					<br>
+					<%= text_field_tag(:q) %>
+				</div>
+
+				<div>
+					<%= label_tag(:q, "Comment", class: 'comment_content') %><span class="asterisk">*</span>
+					<br>
+					<%= text_field_tag(:q, nil, class: 'comment_text_field') %>
+				</div>
+
+				<%= submit_tag("Submit", class: 'submit_tag') %>
+			<% end %>
+		</div>
+	</div>
 </div>
