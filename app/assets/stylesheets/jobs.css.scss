@@ -1,0 +1,18 @@
+$robinhood: #21CE99;
+$white: #FFFFFF;
+
+::selection {
+  background-color: $robinhood;
+  color: $white;
+}
+
+::-moz-selection {
+  background-color: $robinhood;
+  color: $white;
+}
+
+#jobs_content {
+	min-height: 750px;
+	height: auto !important;
+	height: 750px;
+}
