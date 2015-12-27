@@ -1,0 +1,47 @@
+$robinhood: #21CE99;
+$white: #FFFFFF;
+
+::selection {
+  background-color: $robinhood;
+  color: $white;
+}
+
+::-moz-selection {
+  background-color: $robinhood;
+  color: $white;
+}
+
+.container {
+	width: 950px;
+}
+
+#jobs_content {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+
+	@include flex-direction(column);
+
+	min-height: 500px;
+	height: auto !important;
+	height: 500px;
+
+	.header {
+		font-size: 36px;
+		margin: 15px 0;
+	}
+
+	.logo {
+		font-family: megrim, fantasy;
+		font-weight: 600;
+	}
+
+	.content {
+		a {
+			color: $robinhood;
+			text-decoration: none;
+		}
+	}
+}

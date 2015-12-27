@@ -1,0 +1,79 @@
+$robinhood: #21CE99;
+$white: #FFFFFF;
+$white_smoke: #ECECEC;
+
+::selection {
+  background-color: $robinhood;
+  color: $white;
+}
+
+::-moz-selection {
+  background-color: $robinhood;
+  color: $white;
+}
+
+.container {
+	width: 950px;
+}
+
+#contact_content {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	@include flex-direction(column);
+
+	min-height: 500px;
+	height: auto !important;
+	height: 500px;
+
+	.header {
+		font-size: 36px;
+		margin: 0;
+		margin-top: 15px;
+	}
+
+	.sub-header {
+		margin: 0;
+		font-size: 15px;
+	}
+
+	hr {
+		width: 100%;
+	}
+
+	.content {
+		margin: 0;
+
+		.form_tag {
+			div {
+				margin-bottom: 10px;
+			}
+
+			.asterisk {
+				color: red;
+			}
+
+			input {
+				width: 70%;
+				height: 35px;
+				border: 1px solid #DDDDDD;
+				border-radius: 4px;
+			}
+
+			.comment_text_field {
+				height: 250px;					
+			}
+
+			.submit_tag {
+				width: 20%;
+				margin-bottom: 15px;
+			}
+
+			.submit_tag:hover {
+				background-color: $white_smoke;
+			}
+		}
+	}
+}

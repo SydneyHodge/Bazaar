@@ -1,3 +1,8 @@
+@import "about";
+@import "contact";
+@import "developers";
+@import "jobs";
+
 $gray: #B2B2B2;
 $dark_robinhood: #040D14;
 $robinhood: #21CE99;
@@ -29,6 +34,12 @@ footer {
 		width: 100%;
 		position: absolute;
 		bottom: 10px;
+	}
+
+	#social_media_logo {
+		a {
+    		font-family: 'Lucida Grande', 'Helvetica';			
+		}
 	}
 
 	.logo {
